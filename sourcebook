@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var Sourcebook = require('./lib/sourcebook');
+
+var sourcebook = new Sourcebook();
+sourcebook.start();

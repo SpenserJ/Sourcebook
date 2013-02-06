@@ -1,0 +1,26 @@
+{
+  "name": "sourcebook",
+  "description": "Monitor your git repository, and automatically commit saves into a dev branch.",
+  "keywords": ["git", "watch", "save"],
+  "author": "Spenser Jones <spenser.e.Jones@gmail.com>",
+  "version": "0.0.1",
+  "main": "./lib/sourcebook.js",
+  "bin": {
+    "sourcebook": "./sourcebook"
+  },
+  "engines": {
+    "node": ">=0.6.1"
+  },
+  "scripts": {
+    "start": "sourcebook"
+  },
+  "dependencies": {
+    "nconf": "0.6.x",
+    "chokidar": "0.5.x",
+    "express": "3.0.x",
+    "socket.io": "0.9.x",
+    "ejs": "0.8.x",
+    "less-middleware": "0.1.x",
+    "gitteh": "0.17.x"
+  }
+}

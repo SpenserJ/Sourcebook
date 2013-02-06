@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Sourcebook</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr><th>Change Type</th><th>Filename</th></tr>
+    </thead>
+    <tbody data-bind="foreach: commits">
+      <tr>
+        <td data-bind="text: changeType"></td>
+        <td data-bind="text: filename"></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="/js/main.js"></script>
+</body>
+</html>
