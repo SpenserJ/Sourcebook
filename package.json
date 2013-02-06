@@ -21,6 +21,6 @@
     "socket.io": "0.9.x",
     "ejs": "0.8.x",
     "less-middleware": "0.1.x",
-    "gitteh": "0.17.x"
+    "gift": "0.0.x"
   }
 }

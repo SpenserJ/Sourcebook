@@ -6,12 +6,17 @@
   <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
-  <table>
+  <table border="1">
     <thead>
-      <tr><th>Change Type</th><th>Filename</th></tr>
+      <tr>
+        <th>Timestamp</th>
+        <th>Change Type</th>
+        <th>Filename</th>
+      </tr>
     </thead>
     <tbody data-bind="foreach: commits">
       <tr>
+        <td data-bind="text: timestamp"></td>
         <td data-bind="text: changeType"></td>
         <td data-bind="text: filename"></td>
       </tr>
